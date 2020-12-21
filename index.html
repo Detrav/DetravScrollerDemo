@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | DetravScroller</title>
+    <style>* {margin:0;padding:0;}</style>
   </head>
-  <body style="text-align: center">
-    <canvas id="unity-canvas" style="width: 412px; height: 847px; background: #231F20"></canvas>
+  <body style="text-align: center; overflow: hidden;">
+    <canvas id="unity-canvas" style="width: 50vh; height: 100vh; background: #231F20"></canvas>
     <script src="Build/Output.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Output.data.br",
-        frameworkUrl: "Build/Output.framework.js.br",
-        codeUrl: "Build/Output.wasm.br",
+        dataUrl: "Build/Output.data",
+        frameworkUrl: "Build/Output.framework.js",
+        codeUrl: "Build/Output.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "DetravScroller",
